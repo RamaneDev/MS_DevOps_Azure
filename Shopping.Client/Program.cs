@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace Shopping.Client
 {
@@ -12,6 +13,11 @@ namespace Shopping.Client
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            
+            builder.Services.AddHttpClient("ShoppingAPI", client =>
+            {
+                client.BaseAddress = new Uri("http://localhost:5000/");
+            });
 
             var app = builder.Build();
 
