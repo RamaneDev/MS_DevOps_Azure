@@ -5,9 +5,16 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Client", "Shopping.Client\Shopping.Client.csproj", "{5CFBBE43-128E-42FF-882E-1B562EA65900}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.API", "Shopping.API\Shopping.API.csproj", "{BFD0F53B-8A66-411D-A266-28575A6771D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.API", "Shopping.API\Shopping.API.csproj", "{BFD0F53B-8A66-411D-A266-28575A6771D9}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B52B1F8A-5953-4D1E-AA55-526DC69AED90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8s", "K8s", "{C02CF5B6-7100-42BA-9EFE-64D3170A4F57}"
+	ProjectSection(SolutionItems) = preProject
+		K8s\dashboard-adminuser.yaml = K8s\dashboard-adminuser.yaml
+		K8s\mongo-secret.yaml = K8s\mongo-secret.yaml
+		K8s\mongo.yaml = K8s\mongo.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
